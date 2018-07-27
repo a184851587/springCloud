@@ -21,7 +21,10 @@
         <module>eureka-server</module>
         <module>service-hi</module>
         <module>service-ribbon</module>
-        <!--<module>service-feign</module>-->
+        <module>service-feign</module>
+        <module>service-zuul</module>
+        <module>config-client</module>
+        <module>config-server</module>
     </modules>
 
     <properties>
@@ -32,6 +35,12 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jersey</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -51,14 +60,6 @@
             <artifactId>mybatis-plus</artifactId>
             <version>2.3</version>
         </dependency>
-
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jersey</artifactId>
-        </dependency>
-
-
     </dependencies>
 
     <dependencyManagement>
