@@ -31,12 +31,18 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
-
+        <!--消息总线集成-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-bus-amqp</artifactId>
         </dependency>
-
+        <!--spring-boot-starter-actuator模块是一个spring提供的监控模块。
+        我们在开运行发过程中，需要实时和定时监控服务的各项状态和可用性。Spring Boot的spring-boot-starter-actuator
+        模块（健康监控）功能提供了很多监控所需的接口，可以对应用系统进行配置查看、相关功能统计等。-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
