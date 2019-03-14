@@ -37,4 +37,5 @@ public class ServiceHiApplication {
         registration.addInitParameter(ServletProperties.JAXRS_APPLICATION_CLASS, App.class.getName());
         return registration;
     }
+
 }
